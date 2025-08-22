@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-body {
-    background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/netflix-fundo.jpg);
+body{
+    background-image:linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/netflix-fundo.jpg);;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,13 +11,13 @@ body {
     height: 300px;
     justify-content: center;
     align-items: center;
-
 }
 #caixa-logo {
     height: 150px;
     display: flex;
     align-items: center;
     margin-top: 0%;
+
 }
 
 #caixa-logo, img {
@@ -38,11 +38,12 @@ body {
 
 input {
     width: 100%;
-    height: 50px;
+    height: 30px;
     border-radius: 5px;
     border: none;
     margin-bottom: 20px;
     padding: 5%;
+    color: white;
     background-color: rgb(66, 66, 66);
 }
 
@@ -53,7 +54,14 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
     margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(128, 0, 0); 
+    transform: scale(1.02);
 }
 
 .caixa-logo {
@@ -64,10 +72,12 @@ button {
 .apoio {
     display: flex;
     justify-content: space-between;
+
     margin-top: 10px;
 }
 
- a{
+a {
     text-decoration: none;
+
     color: white;
 }
