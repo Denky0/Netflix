@@ -19,3 +19,16 @@ for (let i = 0; i < card.length; i++) {
     window.location.href = "home.html";
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const pesquisa = document.getElementById("pesquisa");
+  const icon = document.getElementById("pesquisa-icon");   
+  const input = document.getElementById("pesquisa-input"); 
+
+  icon.addEventListener("click", () => {
+    pesquisa.classList.toggle("ativa");
+    if (pesquisa.classList.contains("ativa")) {
+      input.focus();
+    }
+  });
+});
