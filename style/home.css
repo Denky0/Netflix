@@ -10,6 +10,8 @@ body {
     background-color: black;
     font-family: Arial, sans-serif;
     color: white;
+    margin: 0;
+    height: auto;
 }
 
 .logo img {
@@ -22,10 +24,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: rgba(0, 0, 0, 0.9); 
+    background: rgb(15, 15, 15); 
     position: fixed;    
     width: 100%;
     height: 80px;     
+    top: 0;
+    z-index: 1000;
 }
 
 .barra-inf {
@@ -55,7 +59,7 @@ body {
 
     padding: 8px;
     border: 1px solid white;
-    background: black;
+    background: rgb(15, 15, 15);
     color: white;
     font-size: 14px;
     border-radius: 3px;
@@ -75,3 +79,60 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+
+.filmes-container {
+    padding: 0px 40px;
+    margin-top: 80px;
+    background-color: rgb(15, 15, 15);
+}
+
+.filmes-container + .filmes-container {
+    margin-top: -80px;
+}
+
+.filmes-container h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.controles-filmes {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fila-filmes {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    width: fit-content;
+    transition: transform 0.3s ease;
+}
+
+.card-filmes {
+    min-width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.card-filmes img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-filmes h3 {
+    font-size: 14px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+}
+
+
