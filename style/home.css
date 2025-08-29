@@ -40,8 +40,8 @@ body {
 
 .barra-inf a {
     text-decoration: none;
-    color: #e5e5e5;
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 18px;
     transition: 0.2s;
 }
 
@@ -56,28 +56,33 @@ body {
 }
 
 .pesquisa-input {
-
     padding: 8px;
     border: 1px solid white;
     background: rgb(15, 15, 15);
     color: white;
     font-size: 14px;
-    border-radius: 3px;
+    border-radius: 5px;
     opacity: 0;
     transition: width 0.3s ease, opacity 0.3s ease;
+    width: 0;
+    box-sizing: content-box;
 }
 
 .pesquisa.ativa .pesquisa-input {
     width: 250px;   
     opacity: 1;
-    padding-left: 32px; 
+    padding-left: 40px; 
 }
 
-.pesquisa-icon {
+.pesquisa-icon img{
     position: absolute;
-    left: 8px;
+    left: -60px;
     cursor: pointer;
     font-size: 18px;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .filmes-container {
@@ -112,7 +117,7 @@ body {
 .card-filmes {
     min-width: 200px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     flex-shrink: 0;
     overflow: hidden;
@@ -126,6 +131,10 @@ body {
     border-bottom-right-radius: 5px;
 }
 
+.card-filmes img:hover {
+    border: 2px solid white;
+}
+
 .card-filmes h3 {
     font-size: 14px;
     margin: 5px 0;
@@ -134,5 +143,3 @@ body {
     text-overflow: ellipsis;
     padding: 0 5px;
 }
-
-
