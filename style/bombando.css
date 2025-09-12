@@ -113,66 +113,9 @@ body {
 }
 
 .destaque{
-    position: relative;
     width: 100%;
-    height: 600px;
-    background-image: url(../assets/lista\ negra.avif);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 25px;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-.info {
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-p {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-button {
-    height: 40px;
-    width: 160px;
-    margin-top: 20px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#play {
-    background-color: white;
-}
-
-#play:hover {
-    background-color: red;
-    color: white;
-    transition: 0.3s;
-}
-
-#options {
-    background-color: rgba(158, 156, 156, 0.719);
-    color: white;
-}
-
-#options:hover {
-    background-color: rgba(189, 184, 184, 0.4);
-    transition: 0.3s;
+    height: 80px;
+    background-color: rgb(15, 15, 15);
 }
 
 .filmes-container {
